@@ -10,7 +10,6 @@
       "url": "https://github.com/hy0709/docker-compose",
       "stackfile": "docker-compose-rtdb.yml"
     },
-	"network":"oge-test",
     "env": [
       {
         "name": "rtdb_vzdb_port",
@@ -54,7 +53,6 @@
       "url": "https://github.com/hy0709/docker-compose",
       "stackfile": "docker-compose-vzdb.yml"
     },
-	"network":"oge-test",
     "env": [
 	  {
         "name": "vzdb_port",
