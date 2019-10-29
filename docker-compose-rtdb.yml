@@ -4,7 +4,7 @@ services:
     image: oge/kdm-rtdb-vzdb:1.2.0
     ports:
       - 8041: 8040
-     external_links:
+    external_links:
       - vzdb-point:rtdbHost
     environment:
       spring.application.name: kdm-rdp-rtdb-vzdb-${server_name}
