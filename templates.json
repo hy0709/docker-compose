@@ -39,6 +39,11 @@
         "label": "与库无关编码规则",
         "description": "该实时库所能处理的KKS编码规则，如：^EB000.{24}[^C].{3}$",
 		"default":"^.{29}[^C].{3}$"
+      },
+	  {
+        "name": "vzdb_name",
+        "label": "vzdb_name",
+        "description": "vzdb_name"
       }
     ]
 	},

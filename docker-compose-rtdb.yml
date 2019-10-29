@@ -5,7 +5,7 @@ services:
     ports:
       - ${rtdb_vzdb_port}:8040
      external_links:
-      - vzdb-${vzdb_name}:rtdbHost
+      - ${vzdb_name}:rtdbHost
     environment:
       spring.application.name: kdm-rdp-rtdb-vzdb-${server_name}
       kdm.rtdb.host:rtdbHost 
