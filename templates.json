@@ -44,6 +44,11 @@
         "name": "vzdb_name",
         "label": "vzdb_name",
         "description": "vzdb_name"
+      },
+	  {
+        "name": "networks-name",
+        "label": "networks-name",
+        "description": "networks-name"
       }
     ]
 	},
@@ -75,6 +80,11 @@
         "name": "vzdb_name",
         "label": "vzdb_name",
         "description": "vzdb_name"
+      },
+	  {
+        "name": "networks-name",
+        "label": "networks-name",
+        "description": "networks-name"
       }
     ]
 	}
