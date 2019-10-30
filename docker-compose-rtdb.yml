@@ -20,6 +20,5 @@ services:
 
 networks:
   outside:
-    external:
-      name: ${networks_name}
+    name: ${networks_name}
         
