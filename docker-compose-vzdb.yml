@@ -18,3 +18,5 @@ services:
 
 networks:
   outside:
+    external:
+      name: ${networks-name}
