@@ -4,11 +4,11 @@ services:
     image: oge/kdm-rtdb-vzdb:1.2.0
     ports:
       - 8041:8040
-    external_links:
-      - vzdb-point:rtdbHost
+    networks:
+      - outside
     environment:
       spring.application.name: kdm-rdp-rtdb-vzdb-${server_name}
-      kdm.rtdb.host: rtdbHost 
+      kdm.rtdb.host: vzdb-${vzdb_name} 
       kdm.rtdb.port: 22235
       kdm.rtdb.username: ${rtdb_username}
       kdm.rtdb.password: ${rtdb_password}
@@ -17,3 +17,7 @@ services:
       - /home/oge/oge_logs/kdm-rdp-rtdb-vzdb-${rtdb_vzdb_port}/:/oge/log
       - /etc/localtime:/etc/localtime:ro
     container_name: kdm-rdp-rtdb-vzdb-${rtdb_vzdb_port}
+
+networks:
+  outside:
+    external: true
