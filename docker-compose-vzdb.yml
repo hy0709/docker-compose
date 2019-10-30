@@ -19,4 +19,4 @@ services:
 networks:
   outside:
     external:
-      name: ${networks-name}
+      name: ${networks_name}
