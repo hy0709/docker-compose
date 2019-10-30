@@ -20,4 +20,3 @@ services:
 
 networks:
   outside:
-    external: true
