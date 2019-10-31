@@ -7,8 +7,6 @@ services:
       - "${vzdb_port}:22235/tcp"
       - "${vzevt_port}:22136/tcp"
     # environment:
-    networks:
-      - outside
     volumes:
       - "/etc/localtime:/etc/localtime:ro"
       - "/home/oge/oge_data/vzdb-${vzdb_port}/model/:/oge/vzdb/model"
@@ -18,5 +16,5 @@ services:
     container_name: vzdb-${vzdb_name}
 
 networks:
-  outside:
+  default:
     name: ${networks_name}

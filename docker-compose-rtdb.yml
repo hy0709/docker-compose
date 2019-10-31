@@ -4,8 +4,6 @@ services:
     image: oge/kdm-rtdb-vzdb:1.2.0
     ports:
       - "8041:8040"
-    networks:
-      - outside
     environment:
       spring.application.name: kdm-rdp-rtdb-vzdb-${server_name}
       kdm.rtdb.host: vzdb-${vzdb_name} 
@@ -19,6 +17,6 @@ services:
     container_name: kdm-rdp-rtdb-vzdb-${rtdb_vzdb_port}
 
 networks:
-  outside:
+  default:
     name: ${networks_name}
         
