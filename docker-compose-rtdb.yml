@@ -1,9 +1,9 @@
-version: '2'
+version: '3.7'
 services:
   rtdb:
     image: oge/kdm-rtdb-vzdb:1.2.0
     ports:
-      - 8041:8040
+      - "8041:8040"
     networks:
       - outside
     environment:
@@ -14,8 +14,8 @@ services:
       kdm.rtdb.password: ${rtdb_password}
       kdm.rtdb.rule: ${rtdb_rule}
     volumes:
-      - /home/oge/oge_logs/kdm-rdp-rtdb-vzdb-${rtdb_vzdb_port}/:/oge/log
-      - /etc/localtime:/etc/localtime:ro
+      - "/home/oge/oge_logs/kdm-rdp-rtdb-vzdb-${rtdb_vzdb_port}/:/oge/log"
+      - "/etc/localtime:/etc/localtime:ro"
     container_name: kdm-rdp-rtdb-vzdb-${rtdb_vzdb_port}
 
 networks:
