@@ -10,7 +10,7 @@ services:
     networks:
       - oge_neworks
     volumes:
-      - /etc/localtime:/etc/localtime:ro"
+      - /etc/localtime:/etc/localtime:ro
       - /home/oge/oge_data/vzdb-${vzdb_port}/model/:/oge/vzdb/model
       - /home/oge/oge_data/vzdb-${vzdb_port}/cache/:/oge/vzdb/cache
       - /home/oge/oge_data/vzdb-${vzdb_port}/data/:/oge/vzdb/data
