@@ -20,5 +20,6 @@ services:
 
 networks:
   oge_neworks:
-    external: true
+    external:
+      name: test111
         
