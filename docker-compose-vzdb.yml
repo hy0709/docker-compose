@@ -1,4 +1,4 @@
-version: '3.7'
+version: "2"
 services:
 
   vzdb:
@@ -7,14 +7,16 @@ services:
       - "${vzdb_port}:22235/tcp"
       - "${vzevt_port}:22136/tcp"
     # environment:
+    networks:
+      - oge_neworks
     volumes:
-      - "/etc/localtime:/etc/localtime:ro"
-      - "/home/oge/oge_data/vzdb-${vzdb_port}/model/:/oge/vzdb/model"
-      - "/home/oge/oge_data/vzdb-${vzdb_port}/cache/:/oge/vzdb/cache"
-      - "/home/oge/oge_data/vzdb-${vzdb_port}/data/:/oge/vzdb/data"
-      - "/home/oge/oge_logs/vzdb-${vzdb_port}/:/oge/vzdb/log"
+      - /etc/localtime:/etc/localtime:ro"
+      - /home/oge/oge_data/vzdb-${vzdb_port}/model/:/oge/vzdb/model
+      - /home/oge/oge_data/vzdb-${vzdb_port}/cache/:/oge/vzdb/cache
+      - /home/oge/oge_data/vzdb-${vzdb_port}/data/:/oge/vzdb/data
+      - /home/oge/oge_logs/vzdb-${vzdb_port}/:/oge/vzdb/log
     container_name: vzdb-${vzdb_name}
 
 networks:
-  default:
-    name: ${networks_name}
+  oge_neworks:
+    external: true

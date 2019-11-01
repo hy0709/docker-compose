@@ -1,13 +1,13 @@
 [
   {
-	"type":3,
+	"type":2,
 	"title":"rtdb-vzdb",
 	"description":"rtdb-vzdb",
 	"categories":["oge"],
 	"platform":"linux",
 	"logo":"https://raw.githubusercontent.com/willxiang/code-note/master/img/kdm-vzdb.png",
 	"repository": {
-      "url": "https://github.com/hy0709/docker-compose",
+      "url": "/templates/oge/docker-compose",
       "stackfile": "docker-compose-rtdb.yml"
     },
     "env": [
@@ -53,14 +53,50 @@
     ]
 	},
 	{
-	"type":3,
-	"title":"vzdb",
+	"type":2,
+	"title":"vzdb-github",
 	"description":"数据源",
 	"categories":["oge"],
 	"platform":"linux",
 	"logo":"https://raw.githubusercontent.com/willxiang/code-note/master/img/kdm-vzdb.png",
 	"repository": {
       "url": "https://github.com/hy0709/docker-compose",
+      "stackfile": "docker-compose-vzdb.yml"
+    },
+    "env": [
+	  {
+        "name": "vzdb_port",
+        "label": "vzdb_port",
+        "description": "vzdb_port",
+		"default":"22235"
+      },
+	  {
+        "name": "vzevt_port",
+        "label": "vzevt_port",
+        "description": "vzevt_port",
+		"default":"22136"
+      },
+	  {
+        "name": "vzdb_name",
+        "label": "vzdb_name",
+        "description": "vzdb_name"
+      },
+	  {
+        "name": "networks-name",
+        "label": "networks-name",
+        "description": "networks-name"
+      }
+    ]
+	},
+	{
+	"type":2,
+	"title":"vzdb-gitlab",
+	"description":"数据源",
+	"categories":["oge"],
+	"platform":"linux",
+	"logo":"https://raw.githubusercontent.com/willxiang/code-note/master/img/kdm-vzdb.png",
+	"repository": {
+      "url": "http://git.orientge.cn:1080/hany/portainer",
       "stackfile": "docker-compose-vzdb.yml"
     },
     "env": [
