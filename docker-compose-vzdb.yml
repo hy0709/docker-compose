@@ -15,9 +15,9 @@ services:
       - /home/oge/oge_data/vzdb-${vzdb_port}/cache/:/oge/vzdb/cache
       - /home/oge/oge_data/vzdb-${vzdb_port}/data/:/oge/vzdb/data
       - /home/oge/oge_logs/vzdb-${vzdb_port}/:/oge/vzdb/log
-    container_name: vzdb-${vzdb_name}
+    container_name: test222
 
 networks:
   oge_neworks:
     external:
-      name: test111
+      name: test222
