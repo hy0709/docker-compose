@@ -3,7 +3,7 @@ services:
   rtdb:
     image: oge/kdm-rtdb-vzdb:1.2.0
     ports:
-      - "8041:8040"
+      - "${rtdb_vzdb_port}:8040"
     networks:
       - oge_neworks
     environment:

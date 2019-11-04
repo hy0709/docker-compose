@@ -5,7 +5,7 @@
 	"description":"rtdb-vzdb",
 	"categories":["oge"],
 	"platform":"linux",
-	"logo":"https://raw.githubusercontent.com/willxiang/code-note/master/img/kdm-vzdb.png",
+	"logo":"http://git.orientge.cn:1080/hany/portainer/raw/master/test.jpg",
 	"repository": {
       "url": "http://git.orientge.cn:1080/hany/portainer",
       "stackfile": "docker-compose-rtdb.yml"
@@ -53,7 +53,7 @@
 	"description":"数据源",
 	"categories":["oge"],
 	"platform":"linux",
-	"logo":"https://raw.githubusercontent.com/willxiang/code-note/master/img/kdm-vzdb.png",
+	"logo":"http://git.orientge.cn:1080/hany/portainer/raw/master/test.jpg",
 	"repository": {
       "url": "http://git.orientge.cn:1080/hany/portainer",
       "stackfile": "docker-compose-vzdb.yml"
